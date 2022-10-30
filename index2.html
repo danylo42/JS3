@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS2</title>
+    <style>
+    a{
+        text-decoration: none;
+        color:black;
+        font-size: 20px;
+    }
+    img{
+        border-radius: 50px;
+    }
+    h2{
+        font-size: 28px;
+        font-family: Segoe UI;
+        color:rgb(84, 31, 231);
+    }
+    button{
+        border: 5px;
+        border-radius: 30px;
+        width: 350px;
+        height: 60px;
+        background-color: cornflowerblue;
+    }
+    </style>
+</head>
+<body>
+    <div align="center" id="photo"></div>
+    <div align="center" id="text"></div>
+    <div align="center" id="link"></div>
+        <script>
+           let $photo = 'Images/alpi.jpg';
+           let $photo1 = document.getElementById("photo");
+           $photo1.innerHTML = "<img src="+$photo+">";
+           
+           let $text = "Панорамний вигляд на гори Альпи з Італії";
+           let $text1 = document.getElementById("text");
+           $text1.innerHTML = "<h2>"+$text+"</h2>";
+
+           let $link = "https://uk.wikipedia.org/wiki/%D0%90%D0%BB%D1%8C%D0%BF%D0%B8";
+           let $link1 = document.getElementById("link");
+           $link1.innerHTML = "<button> <a href="+$link+"> Стаття про Альпи</a></button>";
+        </script>
+</body>
+</html>
